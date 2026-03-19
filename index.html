@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página HTML Semántica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Página HTML Semántica</h1>
+    <p>Ejemplo completo con estructura y estilos CSS</p>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="#menu1">Sección 1</a></li>
+      <li><a href="#menu2">Sección 2</a></li>
+      <li><a href="#menu3">Sección 3</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- SECCIÓN 1 -->
+    <section id="menu1">
+      <h2>Sección 1</h2>
+      <p>Contenido principal de la primera sección.</p>
+
+      <article>
+        <h3>Subtema</h3>
+        <p>Este es un artículo dentro de la sección.</p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN 2 -->
+    <section id="menu2">
+      <h2>Sección 2</h2>
+
+      <!-- IMAGEN -->
+      <figure>
+        <img src="https://via.placeholder.com/600x300" alt="Imagen de ejemplo">
+        <figcaption>Ejemplo de imagen con descripción</figcaption>
+      </figure>
+
+      <!-- TARJETAS -->
+      <div class="contenedor">
+        <article class="tarjeta">
+          <h3>Tarjeta 1</h3>
+          <p>Contenido de la tarjeta.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Tarjeta 2</h3>
+          <p>Contenido de la tarjeta.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3 -->
+    <section id="menu3">
+      <h2>Sección 3</h2>
+
+      <!-- VIDEO -->
+      <iframe 
+        width="100%" 
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 - Mi página web</p>
+  </footer>
+
+</body>
+</html>
