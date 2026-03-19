@@ -1,86 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página HTML Semántica</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad HTML Semántico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Actividad: Página Web Semántica</h1>
+      <p>HTML + CSS</p>
+    </header>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Página HTML Semántica</h1>
-    <p>Ejemplo completo con estructura y estilos CSS</p>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="#consigna">Consigna </a></li>
+        <li><a href="#requisitos">Requisitos </a></li>
+        <li><a href="#ejemplo">Ejemplo </a></li>
+      </ul>
+    </nav>
 
-  <!-- NAV -->
-  <nav>
-    <ul>
-      <li><a href="#menu1">Sección 1</a></li>
-      <li><a href="#menu2">Sección 2</a></li>
-      <li><a href="#menu3">Sección 3</a></li>
-    </ul>
-  </nav>
+    <main>
+      <section id="consigna">
+        <h2>📝 Consigna</h2>
 
-  <!-- MAIN -->
-  <main>
-
-    <!-- SECCIÓN 1 -->
-    <section id="menu1">
-      <h2>Sección 1</h2>
-      <p>Contenido principal de la primera sección.</p>
-
-      <article>
-        <h3>Subtema</h3>
-        <p>Este es un artículo dentro de la sección.</p>
-      </article>
-    </section>
-
-    <!-- SECCIÓN 2 -->
-    <section id="menu2">
-      <h2>Sección 2</h2>
-
-      <!-- IMAGEN -->
-      <figure>
-        <img src="https://via.placeholder.com/600x300" alt="Imagen de ejemplo">
-        <figcaption>Ejemplo de imagen con descripción</figcaption>
-      </figure>
-
-      <!-- TARJETAS -->
-      <div class="contenedor">
         <article class="tarjeta">
-          <h3>Tarjeta 1</h3>
-          <p>Contenido de la tarjeta.</p>
+          <p>
+            Crear una página web sobre un tema a elección (tecnología, deportes,
+            música, videojuegos, etc.) utilizando HTML semántico y CSS.
+          </p>
+        </article>
+      </section>
+
+      <section id="requisitos">
+        <h2>📌 Requisitos</h2>
+
+        <div class="contenedor">
+          <article class="tarjeta">
+            <h3>📄 Estructura HTML</h3>
+            <ul>
+              <li>header</li>
+              <li>nav</li>
+              <li>main</li>
+              <li>section (mínimo 2)</li>
+              <li>article (mínimo 2)</li>
+              <li>footer</li>
+            </ul>
+          </article>
+
+          <article class="tarjeta">
+            <h3>🔗 Navegación</h3>
+            <p>Usar enlaces internos con id.</p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>🖼 Contenido</h3>
+            <ul>
+              <li>Texto</li>
+              <li>Imagen con figure</li>
+              <li>Video (iframe)</li>
+            </ul>
+          </article>
+
+          <article class="tarjeta">
+            <h3>🎨 CSS</h3>
+            <ul>
+              <li>Colores</li>
+              <li>Tipografía</li>
+              <li>Tarjetas</li>
+              <li>Flexbox</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="ejemplo">
+        <h2>💻 Ejemplo</h2>
+
+        <article class="tarjeta">
+          <h3>Estructura básica</h3>
+
+          <pre>
+&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;article&gt;&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;&lt;/footer&gt;
+        </pre
+          >
         </article>
 
         <article class="tarjeta">
-          <h3>Tarjeta 2</h3>
-          <p>Contenido de la tarjeta.</p>
+          <h3>💡 Truco</h3>
+          <ul>
+            <li>header → presentación</li>
+            <li>nav → menú</li>
+            <li>main → contenido</li>
+            <li>section → temas</li>
+            <li>article → subtemas</li>
+            <li>footer → cierre</li>
+          </ul>
         </article>
-      </div>
-    </section>
+      </section>
+      <h2>Ejemplo ver codigo fuente de este sitio</h2>
+      <a href="https://bit.ly/sistemasdigitales_redes" target="_blank">
+        https://bit.ly/sistemasdigitales_redes
+      </a>
+      <br /><br />
+      <h4>Finalizada la actividad crear un repositorio</h4>
+      <h4>en Github y compartir enlace a josepantaleo@gmail.com</h4>
+      <h4>Asunto: enlace actividad 6to inf IPEM 146</h4>
+    </main>
 
-    <!-- SECCIÓN 3 -->
-    <section id="menu3">
-      <h2>Sección 3</h2>
-
-      <!-- VIDEO -->
-      <iframe 
-        width="100%" 
-        height="315"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        allowfullscreen>
-      </iframe>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 - Mi página web</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>Clase de Sistemas Digitales</p>
+    </footer>
+  </body>
 </html>
