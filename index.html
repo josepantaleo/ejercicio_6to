@@ -1,48 +1,137 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Actividad HTML Semántico</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actividad HTML Semántico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body>
-    <header>
-      <h1>Actividad: Modificacion de la calculadora de Básica a Avanzada</h1>
-      <p>HTML + CSS + JavaScript</p>
-    </header>
+<body>
 
-   
+  <header class="header">
+    <h1>🧮 Actividad: Calculadora Básica → Científica</h1>
+    <p>HTML + CSS + JavaScript</p>
+  </header>
 
-      <!-- 🔥 NUEVA SECCIÓN CON JS -->
-      <section id="calculadora">
-        <h2>Modifique su sitio web y reemplace calculadora basica por esta version mas avanzada:</h2>
-        <h3>Nota: para los emoji ir a emojikeyboard</h3>
-        <a href="https://emojikeyboard.top/es/">Galeria de Emoji</a>
-        <h3>Re Programe el siguiente codigo</h3>
-        <h3>Código html</h3>
-        <img src="calcu_av_html.jpg" alt="" />
-        <h5>No copie los comentarios, ponga sus propios</h5>
-        <h3>Código javascript</h3>
-        <img src="calcu_av_script.jpg" alt="" />
-        
-        <h3>Código css</h3>
-        <img src="calcu_av_css.jpg" alt="" />
-        
-      </section>
+  <main class="container">
 
-    
-      <br /><br />
-      <h4>Finalizada la actividad abra su repositorio en github</h4>
-      <h4>Reemplace los archivos necesarios</h4>
-     
-    </main>
+    <!-- INSTRUCCIONES -->
+    <section id="calculadora" class="card">
+      <h2>🔧 Consigna</h2>
 
-    <footer>
       <p>
-        Clase de Desarrollo de Soluciones Informàticas 6to 2026 - prof. Pantaleo
+        Modifique su sitio web y reemplace la calculadora avanzada por una versión más completa tipo científica.
       </p>
-    </footer>
-  </body>
+
+      <h3>📌 Funciones a agregar</h3>
+      <ol class="lista">
+        <li>sen(x)</li>
+        <li>cos(x)</li>
+        <li>tan(x)</li>
+        <li>log(x)</li>
+        <li>π y exponentes</li>
+        <li>paréntesis</li>
+        <li>historial</li>
+      </ol>
+
+      <a class="btn" href="https://emojikeyboard.top/es/" target="_blank">
+        😎 Galería de Emoji
+      </a>
+
+      <div class="imagenes">
+        <div>
+          <h3>🧮 Ejemplo</h3>
+          <img src="calcu_cientifica.jpg" alt="Calculadora científica">
+        </div>
+
+        <div>
+          <h3>💻 HTML</h3>
+          <img src="calcu_cientifica_html.jpg" alt="Código HTML">
+        </div>
+
+        <div>
+          <h3> JavaScript</h3>
+          <img src="calcu_cientifica_js.jpg" alt="Código JS">
+        </div>
+
+        <div></h3>
+          <img src="calcu_cientifica_css.jpg" alt="Código CSS">
+        </div>
+      </div>
+
+      <p class="nota">⚠️ Escriba sus propios comentarios en el código.</p>
+    </section>
+
+<section class="card">
+  <h2> Responde estas preguntas sobre CSS</h2>
+
+  <div class="bloque">
+    <h3>🔹 Generales</h3>
+    <ul>
+      <li>¿Para qué sirve <code>background: #111</code>?</li>
+      <li>¿Qué hace <code>color: white</code>?</li>
+      <li>¿Qué cambia <code>font-family: Arial</code>?</li>
+    </ul>
+  </div>
+
+  <div class="bloque">
+    <h3>🔹 Flexbox</h3>
+    <ul>
+      <li>¿Qué hace <code>display: flex</code>?</li>
+      <li>¿Para qué sirve <code>justify-content: center</code>?</li>
+      <li>¿Qué hace <code>gap: 10px</code>?</li>
+    </ul>
+  </div>
+
+  <div class="bloque">
+    <h3>🔹 Grid</h3>
+    <ul>
+      <li>¿Qué hace <code>display: grid</code>?</li>
+      <li>¿Qué significa <code>repeat(5, 60px)</code>?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Preguntas sobre JavaScript</h2>
+
+  <div class="bloque">
+    <h3>🔹 Funciones</h3>
+    <ul>
+      <li>¿Qué es una función?</li>
+      <li>¿Para qué sirve <code>getElementById</code>?</li>
+    </ul>
+  </div>
+
+  <div class="bloque">
+    <h3>🔹 Calculadora</h3>
+    <ul>
+      <li>¿Qué hace <code>agregar()</code>?</li>
+      <li>¿Qué hace <code>limpiar()</code>?</li>
+      <li>¿Qué hace <code>borrar()</code>?</li>
+    </ul>
+  </div>
+
+  <div class="bloque">
+    <h3>🔹 Historial</h3>
+    <ul>
+      <li>¿Qué hace <code>historial.push()</code>?</li>
+    </ul>
+  </div>
+</section>  
+
+    <!-- ENTREGA -->
+    <section class="final card">
+      <h2>📤 Entrega</h2>
+      <p>Suba su proyecto a GitHub y reemplace los archivos necesarios.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Clase de Desarrollo de Soluciones Informáticas - 6° 2026</p>
+  </footer>
+
+</body>
 </html>

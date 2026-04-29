@@ -1,163 +1,140 @@
-/* RESET BÁSICO */
+/* 🔹 Reset básico */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* BODY */
+/* 🔹 Fondo general */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f4f4f4, #eaeaea);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #333;
-}
-
-/* HEADER */
-header {
-  background: linear-gradient(135deg, #222, #444);
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-/* NAV */
-nav {
-  background-color: #ee7979;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  margin: 0; /* 🔧 corregido */
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: yellow;
-  transform: scale(1.1);
-}
-
-/* MAIN */
-main {
-  padding: 30px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* SECCIONES */
-section {
-  margin-bottom: 40px;
-}
-
-/* TARJETAS */
-.contenedor {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.tarjeta {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  flex: 1;
-  min-width: 250px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-  transition: 0.3s;
-}
-
-.tarjeta:hover {
-  transform: translateY(-5px);
-}
-
-/* TITULOS */
-h2 {
-  margin-bottom: 10px;
-  border-bottom: 3px solid #ee7979;
-  padding-bottom: 5px;
-}
-
-/* TEXTO */
-p {
   line-height: 1.6;
 }
 
-/* FOOTER */
-footer {
-  background-color: #222;
+/* 🔹 Header */
+.header {
+  text-align: center;
+  padding: 25px;
+  background: #111;
   color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
-h4 {
-  color: rgb(51, 47, 237);
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
 
-  animation: zoomSuave 2.5s infinite ease-in-out;
-  transition: 0.3s;
+.header h1 {
+  margin-bottom: 5px;
+}
+
+/* 🔹 Contenedor */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* 🔹 Tarjetas */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔹 Títulos */
+h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 h3 {
-  color: rgb(190, 84, 2);
-  text-align: center;
-  font-size: 25px;
+  margin-top: 15px;
+  color: #444;
+}
+
+/* 🔹 Lista */
+.lista {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* 🔹 Botón */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* 🔹 Imágenes en grid */
+.imagenes {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.imagenes img {
+  width: 50%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.imagenes img:hover {
+  transform: scale(2.05);
+}
+
+/* 🔹 Nota */
+.nota {
+  margin-top: 15px;
+  color: #c0392b;
   font-weight: bold;
-
-  animation: zoomSuave 2.5s infinite ease-in-out;
-  transition: 0.3s;
 }
-h5 {
-  color: rgb(251, 9, 9);
+
+/* 🔹 Details (preguntas desplegables) */
+details {
+  margin-top: 10px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+/* 🔹 Código */
+code {
+  background: #eee;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* 🔹 Sección final */
+.final {
   text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-
-  animation: zoomSuave 2.5s infinite ease-in-out;
-  transition: 0.3s;
-}
-/* ANIMACIÓN MEJORADA */
-@keyframes zoomSuave {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
+  background: #ecf0f1;
 }
 
-/* EFECTO EXTRA AL PASAR EL MOUSE */
-h4:hover {
-  transform: scale(1.2);
-  color: rgb(200, 50, 255);
-}
-img {
-  width: 400px;
-  height: auto;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-  transition: 0.3s;
-
-  display: block;
-  margin: 20px auto; /* centra horizontalmente */
-}
-img:hover {
-  transform: scale(1.5); /* zoom */
+/* 🔹 Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
+  margin-top: 20px;
 }
